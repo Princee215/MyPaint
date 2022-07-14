@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<section class="containers">
+  <div id="toolbar">
+    <h2>Draw.</h2>
+    <label for="stroke">Stroke</label>
+    <input id="stroke" type="color" name="stroke">
+    <label for="lineWidth">Line Width</label>
+    <input id="lineWidth" type="number" name="lineWidth" value="5">
+    <button id="clear">Clear</button>
+    <div class="tag">
+      <p>--------------</p>
+      <p>Made By Prince.</p>
+      <p>--------------</p>
+    </div>
+
+  </div>
+  <div class="drawing-board">
+    <canvas id="drawing-board"></canvas>
+  </div>
+</section>
+
+<script src="paint.js" charset="utf-8"></script>
+
+<%- include('partials/footer') %>
